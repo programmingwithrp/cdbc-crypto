@@ -90,6 +90,7 @@ class Account {
      */
     getCommitment(index) {
         let commitment = poseidonHash(this.getCommitmentSignature(index));
+        console.log("Commitment: ", commitment);
         return commitment;
     }
 

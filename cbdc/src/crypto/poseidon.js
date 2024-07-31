@@ -15,7 +15,8 @@ function poseidonHash(input) {
     for (let i = 0; i < input.length; i++) {
         inputArray = inputArray.concat(convertInput(input[i]));
     }
-
+    console.log('inputArray', inputArray);
+    
     return poseidon(inputArray);
 
     function convertInput(input) {
